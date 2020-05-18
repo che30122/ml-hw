@@ -10,7 +10,8 @@ _C.DEVICE = CN()
 _C.DATA = CN()
 
 _C.DEVICE.GPU = 1 # <gpu_id>
-_C.DEVICE.CUDA = True # use gpu or not
+#_C.DEVICE.CUDA = True # use gpu or not
+_C.DEVICE.CUDA = False # use gpu or not
 
 _C.PATH.TRAIN_SET = "" # <path_to_trainset>
 _C.PATH.TEST_SET = "" # <path_to_testset>

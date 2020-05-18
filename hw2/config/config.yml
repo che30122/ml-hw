@@ -1,5 +1,5 @@
 MODEL:
-  OUTPUT_PATH: "/home/apie/projects/ml_hw/hw2/weights/model.pth"
+  OUTPUT_PATH: "/home/che/ml-hw/hw2/weights/model.pth"
   LR: 0.001
   EPOCH: 5
 
@@ -13,9 +13,9 @@ DATA:
   NUM_WORKERS: 4
 
 PATH:
-  TRAIN_SET: "/home/apie/projects/ml_hw/hw2/Cat_Dog_data/train"
-  TEST_SET: "/home/apie/projects/ml_hw/hw2/Cat_Dog_data/test"
+  TRAIN_SET: "/home/che/ml_hw2_image"
+  TEST_SET: "/home/che/ml_hw2_image"
 
 DEVICE:
   GPU: 1
-  CUDA: True
+  CUDA: False #is True before

@@ -2,6 +2,9 @@ from .transforms              import build_transform
 from torchvision              import datasets
 from torch.utils.data         import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
+#change
+from .myDataset               import myDataset
+#change
 
 import numpy as np
 import os
@@ -16,9 +19,10 @@ def make_train_loader(cfg):
     train_path  = cfg.PATH.TRAIN_SET
     
     transforms = build_transform(cfg)
-
-    trainset = datasets.ImageFolder(train_path, transform=transforms)
-    
+#change	
+    trainset=myDataset(train_path,transform=transforms)
+    #trainset = datasets.ImageFolder(train_path, transform=transforms)
+#change    
     num_train = len(trainset)
     indices = list(range(num_train))
     split = int(np.floor(valid_size * num_train))
@@ -42,7 +46,8 @@ def make_test_loader(cfg):
 
     transforms = build_transform(cfg)
 
-    testset = datasets.ImageFolder(test_path, transform=transforms)
+  #  testset = datasets.ImageFolder(test_path, transform=transforms)
+    testset=myDataset(test_path,transform=transforms,train=1)
 
     test_loader = DataLoader(testset, batch_size=batch_size, num_workers=num_workers)
 

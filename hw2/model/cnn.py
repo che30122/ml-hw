@@ -26,7 +26,10 @@ class cnn_model(nn.Module):
         # Fully connected 1 ,#input_shape=(8*12*12)
         self.fc1 = nn.Linear(8 * 11 * 11, 512) 
         self.relu5 = nn.ReLU() # activation
-        self.fc2 = nn.Linear(512, 2) 
+	#change
+        #self.fc2 = nn.Linear(512, 2) 
+        self.fc2 = nn.Linear(512, 3) 
+	#change
         self.output = nn.Softmax(dim=1)
         
     

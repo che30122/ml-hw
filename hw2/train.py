@@ -28,6 +28,8 @@ for epoch in range(1, epochs+1):
     valid_loss = 0.
 
     for data, target in train_loader:
+     #   print(type(data))
+      #  print(type(target))
         if use_cuda:
             data, target = data.cuda(), target.cuda()
 
