@@ -1,0 +1,27 @@
+Data Preparation:
+	Download data from: https://aidea-web.tw/file/72f6ea6a-9300-445a-bedc-9e9f27d91b1c-1583119287_train_test_dataset_2___C1-P1_Train%20Dev_fixed.rar
+
+	extracting:
+	- rar e C1-P1_Train\ Dev_fixed.rar
+
+	you should put all .jpg and .csv files in the same directory.
+	Then you have to modify "config.yml",to make the path of data suitable.
+	
+	like this way.
+	PATH:
+		TRAIN_SET: "YOUR PATH TO DATA DIRECTORY"
+		TEST_SET: "YOUR PATH TO DATA DIRECTORY"
+
+Environment Installation:
+	- conda env create -f environment.yml -n <env_name>
+   	- conda activate <env_name>
+
+How to Run:
+	(1)train:
+		- python train.py
+		
+		output "model.pth" in the output path you can set in "config.yml"
+	(2)test:
+		- python test.py
+
+

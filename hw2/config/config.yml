@@ -1,7 +1,7 @@
 MODEL:
   OUTPUT_PATH: "/home/che/ml-hw/hw2/weights/model.pth"
   LR: 0.001
-  EPOCH: 5
+  EPOCH: 50
 
 DATA:
   PIXEL_MEAN: [0.485, 0.456, 0.406]

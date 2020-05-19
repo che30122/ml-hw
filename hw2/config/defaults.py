@@ -29,7 +29,7 @@ _C.DATA.PIXEL_STD = [0.229, 0.224, 0.225]
 # -----------------------------------------------
 
 _C.DATA.RESIZE = [224, 224] # picture size after resizing
-_C.DATA.NUM_WORKERS = 8 # use how many processors
+_C.DATA.NUM_WORKERS = 4 # use how many processors
 _C.DATA.TRAIN_BATCH_SIZE = 32 # <train_batch_size>
 _C.DATA.TEST_BATCH_SIZE = 16 # <test_batch_size>
 _C.DATA.VALIDATION_SIZE = 0.2
